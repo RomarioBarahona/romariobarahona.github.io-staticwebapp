@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a heref=index.html>Ichiraku Ramen</a></div>
+            <div class="logo"><a heref=index.html></a></div>
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -34,29 +34,7 @@
     <div class="img">
         <img src="Ichiraku Ramen Logo.png" alt="Logo">
     </div>
-
-    <div class="main">
-        <p>
-            Description of Coffee Company
-        </p>
-    </div>
-    <footer>
-        <p>&copy; 2023 Ichiraku Ramen Non-official Website. All rights reserved to Masashi Kishimoto</p>
-    </footer>
-
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function() {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script>
+    
+    <script type = "text/javascript" src="modules.js"></script>
 </body>
 </html>

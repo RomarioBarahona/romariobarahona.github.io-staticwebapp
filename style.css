@@ -8,7 +8,6 @@
 body {
     height: 100vh;
     background-color: #000;
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Fichiraku-ramen-wallpapers&psig=AOvVaw2czLobM5pmcpesKrEbzRjJ&ust=1696058315653000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNi-_92jz4EDFQAAAAAdAAAAABAE);
     background-size: cover;
     background-position: center;
 }
@@ -18,9 +17,11 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    text-decoration:none;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 a:hover {
@@ -36,7 +37,7 @@ header {
 .navbar {
     width: 100%;
     height: 60px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -64,14 +65,15 @@ header {
 .dropdown_menu{
     display: none;
     position: absolute;
-    right: 2rem;
+    right: 0;
+    left: 0;
     top: 60px;
     height: 0;
-    width: 300px;
+    width: 100%;
     background: #fff;
-    border-radius: 10px;
     overflow: hidden; 
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
 }
 
 .dropdown_menu.open {
@@ -87,13 +89,12 @@ header {
 img {
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    max-width: 60%; /* Adjust the size as needed */
-    max-height: 90vh; /* Adjust the size as needed */
-    width: auto;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    animation-fill-mode: both;
+    max-width:85%;
+    max-height:85%;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    margin:auto;
 }
 
 /* Responsive Design */
@@ -120,7 +121,6 @@ img {
 
 @media(max-width: 576px) {
     .dropdown_menu {
-        left: 2rem;
         width: unset;
     }
 }
