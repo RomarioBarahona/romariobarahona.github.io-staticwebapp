@@ -17,183 +17,214 @@
     <title>Menu - Ichiraku Ramen</title>
 </head>
 
-<body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Ichiraku Ramen Logo.png" alt="Logo">
-                </a>
-            </div>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Ichiraku Ramen Logo.png" alt="Logo">
+            </a>
         </div>
-        <div class="dropdown_menu">
+        <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+    </div>
+</header>
 
 
-    <section id="menu" class="menu">
-        <div class="container">
+<section id="menu" class="menu">
+    <div class="container">
 
-            <div class="section-title">
-                <h2>Check our tasty Menu</h2>
+        <div class="section-title">
+            <h2>Check our tasty Menu</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="menu-flters">
+                    <li data-filter="*" class="filter-active">Show All</li>
+                    <li data-filter=".filter-ramen" class="">Ramen</li>
+                    <li data-filter=".filter-dessert" class="">Dessert</li>
+                    <li data-filter=".filter-specialty">Specialty</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row menu-container" style="position: relative;">
+
+            <!-- Ramen Items -->
+            <div class="col-lg-6 menu-item filter-ramen">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="food-ramen-001.png" alt="Shoyu Ramen Image">
+                    </div>
+                    <a href="#">Shoyu Ramen</a><span>$10.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Shoyu ramen features a clear soy sauce-based broth that is both savory and slightly salty. It is
+                    often served with thin, curly ramen noodles and garnished with ingredients like sliced bamboo
+                    shoots, spinach, nori seaweed, and a seasoned boiled egg.
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12 d-flex justify-content-center">
-                    <ul id="menu-flters">
-                        <li data-filter="*" class="filter-active">Show All</li>
-                        <li data-filter=".filter-ramen" class="">Ramen</li>
-                        <li data-filter=".filter-dessert" class="">Dessert</li>
-                        <li data-filter=".filter-specialty">Specialty</li>
-                    </ul>
+            <div class="col-lg-6 menu-item filter-ramen">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="food-ramen-001.png" alt="Shoyu Ramen Image">
+                    </div>
+                    <a href="#">Miso Butter Corn Ramen</a><span>$13.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    This ramen variation combines the earthy flavor of miso with the richness of butter and the
+                    sweetness of corn. The broth is creamy, and the dish is topped with chashu pork slices, menma
+                    (fermented bamboo shoots), and a pat of butter that melts into the soup.
                 </div>
             </div>
 
-            <div class="row menu-container" style="position: relative;">
-
-                <!-- Ramen Items -->
-                <div class="col-lg-6 menu-item filter-ramen">
-                    <div class="menu-content">
-                        <a href="#">Shoyu Ramen</a><span>$10.95</span>
+            <div class="col-lg-6 menu-item filter-ramen">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="food-ramen-001.png" alt="Shoyu Ramen Image">
                     </div>
-                    <div class="menu-ingredients">
-                        Shoyu ramen features a clear soy sauce-based broth that is both savory and slightly salty. It is
-                        often served with thin, curly ramen noodles and garnished with ingredients like sliced bamboo
-                        shoots, spinach, nori seaweed, and a seasoned boiled egg.
-                    </div>
+                    <a href="#">Tantanmen</a><span>$11.95</span>
                 </div>
+                <div class="menu-ingredients">
+                    Tantanmen is known for its spicy and nutty sesame-flavored broth. It's often served with flat
+                    wheat noodles and topped with ground pork, chopped bok choy, and green onions. The spiciness
+                    level can be adjusted to suit your taste. </div>
+            </div>
 
-                <div class="col-lg-6 menu-item filter-ramen">
-                    <div class="menu-content">
-                        <a href="#">Miso Butter Corn Ramen</a><span>$13.95</span>
+            <div class="col-lg-6 menu-item filter-ramen">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="food-ramen-001.png" alt="Shoyu Ramen Image">
                     </div>
-                    <div class="menu-ingredients">
-                        This ramen variation combines the earthy flavor of miso with the richness of butter and the
-                        sweetness of corn. The broth is creamy, and the dish is topped with chashu pork slices, menma
-                        (fermented bamboo shoots), and a pat of butter that melts into the soup.
-                    </div>
+                    <a href="#">Tsukemen</a><span>$12.95</span>
                 </div>
+                <div class="menu-ingredients">
+                    Tsukemen, also known as dipping ramen, consists of thick, chewy noodles served separately from a
+                    concentrated broth. Diners dip the noodles into the flavorful broth, which is typically made
+                    from pork and soy sauce. It's served with toppings like soft-boiled eggs, nori, and sliced green
+                    onions. </div>
+            </div>
 
-                <div class="col-lg-6 menu-item filter-ramen">
-                    <div class="menu-content">
-                        <a href="#">Tantanmen</a><span>$11.95</span>
+            <div class="col-lg-6 menu-item filter-ramen">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="food-ramen-001.png" alt="Shoyu Ramen Image">
                     </div>
-                    <div class="menu-ingredients">
-                        Tantanmen is known for its spicy and nutty sesame-flavored broth. It's often served with flat
-                        wheat noodles and topped with ground pork, chopped bok choy, and green onions. The spiciness
-                        level can be adjusted to suit your taste. </div>
+                    <a href="#">Hakata Ramen</a><span>$10.95</span>
                 </div>
-
-                <div class="col-lg-6 menu-item filter-ramen">
-                    <div class="menu-content">
-                        <a href="#">Tsukemen</a><span>$12.95</span>
-                    </div>
-                    <div class="menu-ingredients">
-                        Tsukemen, also known as dipping ramen, consists of thick, chewy noodles served separately from a
-                        concentrated broth. Diners dip the noodles into the flavorful broth, which is typically made
-                        from pork and soy sauce. It's served with toppings like soft-boiled eggs, nori, and sliced green
-                        onions. </div>
+                <div class="menu-ingredients">
+                    Hakata ramen hails from the city of Fukuoka in Japan and is known for its pork bone broth,
+                    resulting in a creamy and cloudy soup. The thin, straight noodles are cooked to perfection and
+                    served with toppings like pickled ginger, sesame seeds, and thin slices of garlic chashu pork.
                 </div>
+            </div>
 
-                <div class="col-lg-6 menu-item filter-ramen">
-                    <div class="menu-content">
-                        <a href="#">Hakata Ramen</a><span>$10.95</span>
+            <!-- Dessert Items -->
+            <div class="col-lg-6 menu-item filter-dessert">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="dessert.png" alt="Dessert">
                     </div>
-                    <div class="menu-ingredients">
-                        Hakata ramen hails from the city of Fukuoka in Japan and is known for its pork bone broth,
-                        resulting in a creamy and cloudy soup. The thin, straight noodles are cooked to perfection and
-                        served with toppings like pickled ginger, sesame seeds, and thin slices of garlic chashu pork.
-                    </div>
+                    <a href="#">Matcha Green Tea Ice Cream</a><span>$6.95</span>
                 </div>
-
-                <!-- Dessert Items -->
-                <div class="col-lg-6 menu-item filter-dessert">
-                    <div class="menu-content">
-                        <a href="#">Matcha Green Tea Ice Cream</a><span>$6.95</span>
-                    </div>
-                    <div class="menu-ingredients">
-                        Creamy matcha-flavored green tea ice cream served with a drizzle of sweet red bean paste.
-                    </div>
+                <div class="menu-ingredients">
+                    Creamy matcha-flavored green tea ice cream served with a drizzle of sweet red bean paste.
                 </div>
+            </div>
 
-                <div class="col-lg-6 menu-item filter-dessert">
-                    <div class="menu-content">
-                        <a href="#">Mochi</a><span>$4.95</span>
+            <div class="col-lg-6 menu-item filter-dessert">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="dessert.png" alt="Dessert">
                     </div>
-                    <div class="menu-ingredients">
-                        Creamy matcha-flavored green tea ice cream served with a drizzle of sweet red bean paste.
-                    </div>
+                    <a href="#">Mochi</a><span>$4.95</span>
                 </div>
-
-                <div class="col-lg-6 menu-item filter-dessert">
-                    <div class="menu-content">
-                        <a href="#">Dorayaki</a><span>$5.95</span>
-                    </div>
-                    <div class="menu-ingredients">
-                        A pair of fluffy pancakes sandwiched with a generous layer of sweet red bean paste.
-                    </div>
+                <div class="menu-ingredients">
+                    Creamy matcha-flavored green tea ice cream served with a drizzle of sweet red bean paste.
                 </div>
+            </div>
 
-                <div class="col-lg-6 menu-item filter-dessert">
-                    <div class="menu-content">
-                        <a href="#">Taiyaki</a><span>$7.95</span>
+            <div class="col-lg-6 menu-item filter-dessert">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="dessert.png" alt="Dessert">
                     </div>
-                    <div class="menu-ingredients">
-                        Fish-shaped waffle filled with your choice of sweet fillings, such as custard or chocolate.
-                    </div>
+                    <a href="#">Dorayaki</a><span>$5.95</span>
                 </div>
-
-                <div class="col-lg-6 menu-item filter-dessert">
-                    <div class="menu-content">
-                        <a href="#">Sakura Cheesecake</a><span>$8.95</span>
-                    </div>
-                    <div class="menu-ingredients">
-                        Delicate cherry blossom-flavored cheesecake with a hint of floral sweetness
-                    </div>
+                <div class="menu-ingredients">
+                    A pair of fluffy pancakes sandwiched with a generous layer of sweet red bean paste.
                 </div>
+            </div>
 
-                <!-- Specialty Items -->
-                <div class="col-lg-6 menu-item filter-specialty">
-                    <div class="menu-content">
-                        <a href="#">Tonokotsu Ramen</a><span>$12.95</span>
+            <div class="col-lg-6 menu-item filter-dessert">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="dessert.png" alt="Dessert">
                     </div>
-                    <div class="menu-ingredients">
-                        A rich and creamy pork-based broth simmered for hours to perfection, served with thin, straight
-                        noodles. Topped with tender slices of chashu pork, green onions, a soft-boiled marinated egg,
-                        and garnished with sesame seeds and nori seaweed.
-                    </div>
+                    <a href="#">Taiyaki</a><span>$7.95</span>
                 </div>
-
-                <div class="col-lg-6 menu-item filter-specialty">
-                    <div class="menu-content">
-                        <a href="#">Spicy Miso Ramen</a><span>$11.95</span>
-                    </div>
-                    <div class="menu-ingredients">
-                        A hearty and spicy miso-based broth with a kick of heat, featuring curly ramen noodles. Topped
-                        with ground pork, corn kernels, bean sprouts, and finely chopped scallions. Finished with a
-                        dollop of spicy miso paste for extra flavor.
-                    </div>
+                <div class="menu-ingredients">
+                    Fish-shaped waffle filled with your choice of sweet fillings, such as custard or chocolate.
                 </div>
+            </div>
 
+            <div class="col-lg-6 menu-item filter-dessert">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="dessert.png" alt="Dessert">
+                    </div>
+                    <a href="#">Sakura Cheesecake</a><span>$8.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Delicate cherry blossom-flavored cheesecake with a hint of floral sweetness
+                </div>
+            </div>
+
+            <!-- Specialty Items -->
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="specialty.jpg" alt="Specialty">
+                    </div>
+                    <a href="#">Tonokotsu Ramen</a><span>$12.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    A rich and creamy pork-based broth simmered for hours to perfection, served with thin, straight
+                    noodles. Topped with tender slices of chashu pork, green onions, a soft-boiled marinated egg,
+                    and garnished with sesame seeds and nori seaweed.
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-specialty">
+                <div class="menu-content">
+                    <div class="menu-image">
+                        <img src="specialty.jpg" alt="Specialty">
+                    </div>
+                    <a href="#">Spicy Miso Ramen</a><span>$11.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    A hearty and spicy miso-based broth with a kick of heat, featuring curly ramen noodles. Topped
+                    with ground pork, corn kernels, bean sprouts, and finely chopped scallions. Finished with a
+                    dollop of spicy miso paste for extra flavor.
+                </div>
             </div>
 
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Ichiraku Ramen Non-official Website. All rights reserved to Masashi Kishimoto</p>
-    </footer>
+    </div>
+</section>
 
-    <script type="text/javascript" src="modules.js"></script>
+<script type="text/javascript" src="modules.js"></script>
 </body>
 
 </html>
